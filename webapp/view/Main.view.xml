@@ -1,0 +1,7 @@
+<mvc:View controllerName="sap.devs.port.myport.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" showHeader="false">
+        
+    </Page>
+</mvc:View>

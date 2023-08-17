@@ -1,0 +1,49 @@
+<mvc:View controllerName="sap.devs.port.myport.controller.Menu" displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:tnt="sap.tnt"
+    xmlns="sap.m">
+    <tnt:ToolPage>
+        <tnt:header>
+            <tnt:ToolHeader>
+                <Title level="H1" id="idTitle" />
+                <ToolbarSpacer/>
+
+                <ToolbarSpacer>
+                    <layoutData>
+                        <OverflowToolbarLayoutData priority="NeverOverflow" minWidth="20px" />
+                    </layoutData>
+                </ToolbarSpacer>
+                <tnt:ToolHeaderUtilitySeparator />
+
+            </tnt:ToolHeader>
+        </tnt:header>
+        <tnt:subHeader>
+            <tnt:ToolHeader>
+                <IconTabHeader selectedKey="" select="onItemSelect" mode="Inline">
+                    <items>
+                        <IconTabFilter text="Início" key="Start"/>
+                        <IconTabFilter text="Sobre" key="About"/>
+                        <IconTabFilter text="Projetos" key="Project"/>
+                        <IconTabFilter text="Contato" key="Contact"/>
+                    </items>
+                </IconTabHeader>
+            </tnt:ToolHeader>
+        </tnt:subHeader>
+
+        <tnt:mainContents>
+            <NavContainer id="appContainer" initialPage="page1">
+                <pages>
+
+                    <ScrollContainer id="Dashboard" horizontal="false" vertical="true" height="100%"/>
+
+                    <ScrollContainer id="Kanban" horizontal="false" vertical="true" height="100%"/>
+
+                    <ScrollContainer id="Backlog" horizontal="false" vertical="true" height="100%"/>
+
+                </pages>
+            </NavContainer>
+        </tnt:mainContents>
+    </tnt:ToolPage>
+
+
+</mvc:View>
