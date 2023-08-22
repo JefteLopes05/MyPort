@@ -1,49 +1,113 @@
 <mvc:View controllerName="sap.devs.port.myport.controller.Menu" displayBlock="true"
-    xmlns:mvc="sap.ui.core.mvc"
-    xmlns:tnt="sap.tnt"
-    xmlns="sap.m">
-    <tnt:ToolPage>
-        <tnt:header>
-            <tnt:ToolHeader>
-                <Title level="H1" id="idTitle" />
-                <ToolbarSpacer/>
+	xmlns="sap.uxap"
+	xmlns:m="sap.m"
+	xmlns:form="sap.ui.layout.form"
+	xmlns:mvc="sap.ui.core.mvc">
+	<ObjectPageLayout id="appContainer" isChildPage="true" upperCaseAnchorBar="false">
 
-                <ToolbarSpacer>
-                    <layoutData>
-                        <OverflowToolbarLayoutData priority="NeverOverflow" minWidth="20px" />
-                    </layoutData>
-                </ToolbarSpacer>
-                <tnt:ToolHeaderUtilitySeparator />
+		<sections>
+			<ObjectPageSection title="Início">
+				<subSections>
+					<ObjectPageSubSection>
+						<m:HBox alignContent="Center" alignItems="Center" justifyContent="Center">
+							<m:VBox>
+								<m:Avatar class="sapUiLargeMarginTopBottom" src="image/MyStatusSmall.jpg" displaySize="Custom" customDisplaySize="20rem">
+									<m:detailBox>
+										<m:LightBox>
+											<m:LightBoxItem imageSrc="image/MyStatus.jpg" alt="Jefté Lopes" title="Desnvolvedor FreeLancer" subtitle="Jefté Araújo Lopes - Dev ui5">
+											</m:LightBoxItem>
+										</m:LightBox>
+									</m:detailBox>
+								</m:Avatar>
+								<m:HBox alignContent="Center" alignItems="Center" justifyContent="Center">
+									<m:Button class="sapUiTinyMarginBeginEnd" type="Emphasized" icon="sap-icon://account"/>
+									<m:Button class="sapUiTinyMarginBeginEnd" type="Emphasized" icon="sap-icon://account"/>
+									<m:Button class="sapUiTinyMarginBeginEnd" type="Emphasized" icon="sap-icon://account"/>
+								</m:HBox>
+							</m:VBox>
+						</m:HBox>
+						<m:HBox class="sapUiLargeMarginTopBottom" alignContent="Center" alignItems="Center" justifyContent="Center">
+							<m:VBox>
+								<m:Title level="Auto" text="Olá! Sou Jefté Lopes Desenvolvedor Freelancer" wrapping="true" titleStyle="H1"/>
+								<m:Title class="sapUiSmallMarginTop" level="Auto" text="Atualmente, atuo como desenvolvedor freelancer de SAPUI5, com sólida experiência em JavaScript. Minha formação inclui o ensino médio integrado a um curso técnico em informática. Além disso, adquiri experiência valiosa como desenvolvedor Salesforce durante meu estágio na Moldsoft." wrapping="true" titleStyle="H2"/>
+								<m:HBox>
+									<m:Button class="sapUiTinyMarginBeginEnd" text="Currículo" icon="sap-icon://download" type="Emphasized"/>
+									<m:Button class="sapUiTinyMarginBeginEnd" text="Contato" icon="sap-icon://employee-lookup" type="Emphasized"/>
+								</m:HBox>
+							</m:VBox>
 
-            </tnt:ToolHeader>
-        </tnt:header>
-        <tnt:subHeader>
-            <tnt:ToolHeader>
-                <IconTabHeader selectedKey="" select="onItemSelect" mode="Inline">
-                    <items>
-                        <IconTabFilter text="Início" key="Start"/>
-                        <IconTabFilter text="Sobre" key="About"/>
-                        <IconTabFilter text="Projetos" key="Project"/>
-                        <IconTabFilter text="Contato" key="Contact"/>
-                    </items>
-                </IconTabHeader>
-            </tnt:ToolHeader>
-        </tnt:subHeader>
+						</m:HBox>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
 
-        <tnt:mainContents>
-            <NavContainer id="appContainer" initialPage="page1">
-                <pages>
+			<ObjectPageSection title="Sobre">
+				<subSections>
+					<ObjectPageSubSection>
+						<form:SimpleForm maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" labelSpanL="12" labelSpanM="12" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
+							<form:content>
+								<m:Label text="Tela teste"/>
+								<m:Text text="Jefté"/>
+								<m:Label text="Testando"/>
+								<m:Text text="Teste"/>
+								<m:Label text="Supplier"/>
+								<m:Text text="Teste"/>
+							</form:content>
+						</form:SimpleForm>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
 
-                    <ScrollContainer id="Dashboard" horizontal="false" vertical="true" height="100%"/>
+			<ObjectPageSection title="Habilidades">
+				<subSections>
+					<ObjectPageSubSection>
+						<form:SimpleForm maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" labelSpanL="12" labelSpanM="12" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
+							<form:content>
+								<m:Label text="Tela teste"/>
+								<m:Text text="Jefté"/>
+								<m:Label text="Testando"/>
+								<m:Text text="Teste"/>
+								<m:Label text="Supplier"/>
+								<m:Text text="Teste"/>
+							</form:content>
+						</form:SimpleForm>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
 
-                    <ScrollContainer id="Kanban" horizontal="false" vertical="true" height="100%"/>
+			<ObjectPageSection title="Projetos">
+				<subSections>
+					<ObjectPageSubSection>
+						<form:SimpleForm maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" labelSpanL="12" labelSpanM="12" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
+							<form:content>
+								<m:Label text="Tela teste"/>
+								<m:Text text="Jefté"/>
+								<m:Label text="Testando"/>
+								<m:Text text="Teste"/>
+								<m:Label text="Supplier"/>
+								<m:Text text="Teste"/>
+							</form:content>
+						</form:SimpleForm>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
 
-                    <ScrollContainer id="Backlog" horizontal="false" vertical="true" height="100%"/>
-
-                </pages>
-            </NavContainer>
-        </tnt:mainContents>
-    </tnt:ToolPage>
-
-
+			<ObjectPageSection title="Contato">
+				<subSections>
+					<ObjectPageSubSection>
+						<form:SimpleForm maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" labelSpanL="12" labelSpanM="12" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
+							<form:content>
+								<m:Label text="Tela teste"/>
+								<m:Text text="Jefté"/>
+								<m:Label text="Testando"/>
+								<m:Text text="Teste"/>
+								<m:Label text="Supplier"/>
+								<m:Text text="Teste"/>
+							</form:content>
+						</form:SimpleForm>
+					</ObjectPageSubSection>
+				</subSections>
+			</ObjectPageSection>
+		</sections>
+	</ObjectPageLayout>
 </mvc:View>
