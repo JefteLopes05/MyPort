@@ -78,21 +78,16 @@
       },
       "routes": [
         {
-          "name": "RouteMyPort",
-          "pattern": ":?query:",
-          "target": [
-            "TargetMyPort"
-          ]
+          "pattern": "",
+          "name": "Menu",
+          "target": "Menu"
         }
       ],
       "targets": {
-        "TargetMyPort": {
-          "viewType": "XML",
-          "transition": "slide",
-          "clearControlAggregation": false,
-          "viewId": "Main",
-          "viewName": "Main"
+        "Menu": {
+          "viewName": "Menu"
         }
+        
       }
     },
     "rootView": {
