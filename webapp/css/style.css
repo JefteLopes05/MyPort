@@ -1,0 +1,31 @@
+    /* Estilos para carrossel */
+  .sapMCrsl {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    margin: 0; /* Remova as margens padrão do Carousel */
+    padding: 0; /* Remova o preenchimento padrão do Carousel */
+  }
+  /* Estilos para cada cartão no carrossel */
+.sapMCrslItem {
+    flex: 0 0 calc(100% / 4); /* Exibir no máximo 4 cartões em desktop */
+    max-width: calc(70% / 4); /* Largura máxima de cada cartão */
+    padding: 0 8px; /* Adicione um pequeno espaço lateral */
+    box-sizing: border-box; /* Inclua preenchimento e borda na largura total */
+  }
+  
+  /* Responsividade para tablets */
+@media (max-width: 1024px) {
+    .sapMCrslItem {
+      flex: 0 0 calc(100% / 2); /* Exibir no máximo 2 cartões em tablets */
+      max-width: calc(30% / 2); /* Largura máxima de cada cartão em tablets */
+    }
+  }
+  
+  /* Responsividade para dispositivos móveis */
+  @media (max-width: 768px) {
+    .sapMCrslItem {
+      flex: 0 0 100%; /* Exibir apenas 1 cartão em dispositivos móveis */
+      max-width: 100%; /* Largura máxima de cada cartão em dispositivos móveis */
+    }
+  }

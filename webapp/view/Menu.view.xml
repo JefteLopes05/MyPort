@@ -1,52 +1,13 @@
 <mvc:View controllerName="sap.devs.port.myport.controller.Menu" displayBlock="true"
 	xmlns="sap.uxap"
-	xmlns:m="sap.m"
-	xmlns:cards="sap.f.cards"
-	xmlns:f="sap.f"
-	xmlns:l="sap.ui.layout"
-	xmlns:form="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
 	xmlns:mvc="sap.ui.core.mvc">
-	<ObjectPageLayout showHeaderContent="false" id="appContainer" isChildPage="true" upperCaseAnchorBar="false">
+	<ObjectPageLayout showHeaderContent="false" isChildPage="true" upperCaseAnchorBar="false">
 		<sections>
 			<ObjectPageSection title="Início">
 				<subSections>
 					<ObjectPageSubSection>
-						<m:HBox alignContent="Center" alignItems="Center" justifyContent="Center">
-							<m:VBox>
-								<m:Avatar class="sapUiLargeMarginTopBottom sapUiSmallMarginBegin" src="image/MyStatusSmall.jpg" displaySize="Custom" customDisplaySize="20rem"/>
-								<m:HBox class="sapUiSmallMarginBegin" alignContent="Center" alignItems="Center" justifyContent="Center">
-									<m:Avatar src="image/LogoLinkedin.png" class="sapUiTinyMarginBeginEnd" tooltip="Perfil do Linkedin" showBorder="true" press="onRedirectToLinkedin"/>
-									<m:Avatar src="image/LogoGitHub.png" class="sapUiTinyMarginBeginEnd" tooltip="Perfil do gitHub" showBorder="true" type="Transparent" icon="sap-icon://account" press="onRedirectToGitHub"/>
-								</m:HBox>
-							</m:VBox>
-						</m:HBox>
-						<m:HBox class="sapUiLargeMarginTopBottom" alignContent="Center" alignItems="Center" justifyContent="Center">
-							<m:VBox>
-								<m:Title textAlign="Center" text="Olá! Sou Jefté Lopes Desenvolvedor Freelancer" wrapping="true" titleStyle="H1"/>
-								<m:HBox class="sapUiSmallMarginTopBottom" alignContent="Center" alignItems="Center">
-									<m:Avatar fallbackIcon="sap-icon://popup-window" backgroundColor="Accent10"/>
-									<m:Title text="Desenvolvendo interfaces com SAPUI5 e Javascript" wrapping="true" titleStyle="H3"/>
-								</m:HBox>
-								<m:HBox class="sapUiSmallMarginTopBottom" alignContent="Center" alignItems="Center">
-									<m:Avatar fallbackIcon="sap-icon://study-leave" backgroundColor="Accent9"/>
-									<m:Title text="Cursando Análise e Desenvolvimento de Sistemas (Em Breve)" wrapping="true" titleStyle="H3"/>
-								</m:HBox>
-								<m:HBox class="sapUiSmallMarginTopBottom" alignContent="Center" alignItems="Center">
-									<m:Avatar fallbackIcon="sap-icon://lightbulb" backgroundColor="Accent7"/>
-									<m:Title text="Interesse em desenvolvimento Front-end" wrapping="true" titleStyle="H3"/>
-								</m:HBox>
-								<m:HBox class="sapUiSmallMarginTopBottom" alignContent="Center" alignItems="Center">
-									<m:Avatar fallbackIcon="sap-icon://target-group" backgroundColor="Accent8"/>
-									<m:Title text="Em busca de uma oportunidade para atuar como desenvolvedor" wrapping="true" titleStyle="H3"/>
-								</m:HBox>
-
-								<m:HBox>
-									<m:Button class="sapUiTinyMarginBeginEnd" text="Contato" tooltip="Informações de contato" icon="sap-icon://employee-lookup" type="Emphasized"/>
-									<m:Button class="sapUiTinyMarginBeginEnd" text="Currículo" tooltip="Download do currículo" icon="sap-icon://download" type="Ghost"/>
-								</m:HBox>
-							</m:VBox>
-
-						</m:HBox>
+						<core:Fragment fragmentName="sap.devs.port.myport.view.fragments.MainScreen" type="XML"/>
 					</ObjectPageSubSection>
 				</subSections>
 			</ObjectPageSection>
@@ -54,25 +15,7 @@
 			<ObjectPageSection title="Sobre" showTitle="false">
 				<subSections>
 					<ObjectPageSubSection>
-						<l:VerticalLayout width="100%">
-							<m:VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-								<m:Title class="sapUiSmallMarginTopBottom" text="Sobre mim" titleStyle="H1"/>
-							</m:VBox>
-							<l:BlockLayout>
-								<l:BlockLayoutRow accentCells="Accent1">
-									<l:BlockLayoutCell width="1" title="Experiências" titleAlignment="Center">
-										<m:Text textAlign="Center" text="No presente momento, exerço a função de desenvolvedor freelancer especializado em SAPUI5, aplicando de maneira integrada o XML e o JavaScript para criar interfaces dinâmicas e robustas. Minha trajetória educacional abrange o ensino médio, o qual foi integrado a um curso técnico em informática. Estou profundamente comprometido em expandir meu conhecimento e cultivar novas habilidades, com o objetivo de oferecer à empresa um valor substancialmente enriquecido." />
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell title="Formação Acadêmica" titleAlignment="Center">
-										<m:Text textAlign="Center" text="Conforme mencionado previamente, frequentei o ensino médio profissionalizante, onde adquiri uma vasta gama de conhecimentos, abrangendo desde noções de informática básica até programação orientada a objetos. Após completar o período de três anos de curso, tive a oportunidade de realizar um estágio, o qual me proporcionou uma compreensão mais profunda do ambiente profissional. Caso deseje obter mais informações sobre os tópicos abordados durante este curso, convido você a conferir o certificado disponibilizado logo abaixo." />
-									</l:BlockLayoutCell>
-								</l:BlockLayoutRow>
-							</l:BlockLayout>
-							<m:VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-								<m:Title class="sapUiSmallMarginBottom sapUiMediumMarginTop" text="Certificado" titleStyle="H2"/>
-								<m:Avatar class="sapUiSmallMarginBottom" tooltip="Ver Certificado" fallbackIcon="sap-icon://competitor" backgroundColor="Accent4" displaySize="Custom" customDisplaySize="10rem" customFontSize="5rem"/>
-							</m:VBox>
-						</l:VerticalLayout>
+						<core:Fragment fragmentName="sap.devs.port.myport.view.fragments.ScreenAbout" type="XML"/>
 					</ObjectPageSubSection>
 				</subSections>
 			</ObjectPageSection>
@@ -80,34 +23,7 @@
 			<ObjectPageSection title="Habilidades" showTitle="false">
 				<subSections>
 					<ObjectPageSubSection>
-						<l:VerticalLayout width="100%">
-							<m:VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-								<m:Title class="sapUiSmallMarginTopBottom" text="Habilidades" titleStyle="H1"/>
-							</m:VBox>
-							<l:BlockLayout>
-								<l:BlockLayoutRow accentCells="Accent1">
-									<l:BlockLayoutCell width="1" title="SAPUI5" titleAlignment="Center">
-										<m:VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-											<m:Avatar class="sapUiSmallMarginBottom" fallbackIcon="sap-icon://competitor" backgroundColor="Accent4" displaySize="Custom" customDisplaySize="10rem" customFontSize="5rem"/>
-										</m:VBox>
-										<m:Text textAlign="Center" text="No presente momento, exerço a função de desenvolvedor freelancer especializado em SAPUI5, aplicando de maneira integrada o XML e o JavaScript para criar interfaces dinâmicas e robustas. Minha trajetória educacional abrange o ensino médio, o qual foi integrado a um curso técnico em informática. Estou profundamente comprometido em expandir meu conhecimento e cultivar novas habilidades, com o objetivo de oferecer à empresa um valor substancialmente enriquecido." />
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell width="1" title="XML" titleAlignment="Center">
-										<m:VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-											<m:Avatar class="sapUiSmallMarginBottom" fallbackIcon="sap-icon://competitor" backgroundColor="Accent4" displaySize="Custom" customDisplaySize="10rem" customFontSize="5rem"/>
-										</m:VBox>
-										<m:Text textAlign="Center" text="No presente momento, exerço a função de desenvolvedor freelancer especializado em SAPUI5, aplicando de maneira integrada o XML e o JavaScript para criar interfaces dinâmicas e robustas. Minha trajetória educacional abrange o ensino médio, o qual foi integrado a um curso técnico em informática. Estou profundamente comprometido em expandir meu conhecimento e cultivar novas habilidades, com o objetivo de oferecer à empresa um valor substancialmente enriquecido." />
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell width="1" title="Javascript" titleAlignment="Center">
-										<m:VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-											<m:Avatar class="sapUiSmallMarginBottom" fallbackIcon="sap-icon://competitor" backgroundColor="Accent4" displaySize="Custom" customDisplaySize="10rem" customFontSize="5rem"/>
-										</m:VBox>
-										<m:Text textAlign="Center" text="No presente momento, exerço a função de desenvolvedor freelancer especializado em SAPUI5, aplicando de maneira integrada o XML e o JavaScript para criar interfaces dinâmicas e robustas. Minha trajetória educacional abrange o ensino médio, o qual foi integrado a um curso técnico em informática. Estou profundamente comprometido em expandir meu conhecimento e cultivar novas habilidades, com o objetivo de oferecer à empresa um valor substancialmente enriquecido." />
-									</l:BlockLayoutCell>
-								</l:BlockLayoutRow>
-							</l:BlockLayout>
-
-						</l:VerticalLayout>
+						<core:Fragment fragmentName="sap.devs.port.myport.view.fragments.ScreenSkills" type="XML"/>
 					</ObjectPageSubSection>
 				</subSections>
 			</ObjectPageSection>
@@ -115,16 +31,7 @@
 			<ObjectPageSection title="Projetos">
 				<subSections>
 					<ObjectPageSubSection>
-						<form:SimpleForm maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" labelSpanL="12" labelSpanM="12" emptySpanL="0" emptySpanM="0" columnsL="1" columnsM="1">
-							<form:content>
-								<m:Label text="Tela teste"/>
-								<m:Text text="Jefté"/>
-								<m:Label text="Testando"/>
-								<m:Text text="Teste"/>
-								<m:Label text="Supplier"/>
-								<m:Text text="Teste"/>
-							</form:content>
-						</form:SimpleForm>
+						<core:Fragment fragmentName="sap.devs.port.myport.view.fragments.ScreenProject" type="XML"/>
 					</ObjectPageSubSection>
 				</subSections>
 			</ObjectPageSection>
@@ -132,46 +39,7 @@
 			<ObjectPageSection title="Contato" showTitle="false">
 				<subSections>
 					<ObjectPageSubSection>
-						<l:VerticalLayout width="100%">
-							<m:VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-								<m:Title class="sapUiSmallMarginTopBottom" text="Contato" titleStyle="H1"/>
-							</m:VBox>
-							<l:BlockLayout>
-								<l:BlockLayoutRow accentCells="Accent1">
-									<l:BlockLayoutCell width="4">
-										<m:HBox class="sapUiSmallMarginTopBottom" alignContent="Center" alignItems="Center">
-											<m:Avatar fallbackIcon="sap-icon://map-2" backgroundColor="Transparent" displaySize="Custom" customFontSize="3rem"/>
-											<m:VBox class="sapUiTinyMargin">
-												<m:Title text="Localidade" wrapping="true" titleStyle="H3"/>
-												<m:Title text="Fortaleza, Ceará" wrapping="true" titleStyle="H4"/>
-											</m:VBox>
-										</m:HBox>
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell width="4">
-										<m:HBox class="sapUiSmallMarginTopBottom" alignContent="Center" alignItems="Center">
-											<m:Avatar fallbackIcon="sap-icon://email" backgroundColor="Transparent" displaySize="Custom" customFontSize="3rem"/>
-											<m:VBox class="sapUiTinyMargin">
-												<m:Title text="E-mail" wrapping="true" titleStyle="H3"/>
-												<m:Title text="jeftelopes05@gmail.com" wrapping="true" titleStyle="H4"/>
-											</m:VBox>
-										</m:HBox>
-									</l:BlockLayoutCell>
-									<l:BlockLayoutCell width="4">
-										<m:HBox class="sapUiSmallMarginTopBottom" alignContent="Center" alignItems="Center">
-											<m:Avatar fallbackIcon="sap-icon://call" backgroundColor="Transparent" displaySize="Custom" customFontSize="3rem"/>
-											<m:VBox class="sapUiTinyMargin">
-												<m:Title text="Telefone" wrapping="true" titleStyle="H3"/>
-												<m:Title text="+85 99175-7561" wrapping="true" titleStyle="H4"/>
-											</m:VBox>
-										</m:HBox>
-									</l:BlockLayoutCell>
-								</l:BlockLayoutRow>
-							</l:BlockLayout>
-							<m:HBox class="sapUiSmallMarginBegin" alignContent="Center" alignItems="Center" justifyContent="Center">
-								<m:Avatar src="image/LogoLinkedin.png" class="sapUiTinyMarginBeginEnd" tooltip="Perfil do Linkedin" showBorder="true" press="onRedirectToLinkedin"/>
-								<m:Avatar src="image/LogoGitHub.png" class="sapUiTinyMarginBeginEnd" tooltip="Perfil do gitHub" showBorder="true" type="Transparent" icon="sap-icon://account" press="onRedirectToGitHub"/>
-							</m:HBox>
-						</l:VerticalLayout>
+						<core:Fragment fragmentName="sap.devs.port.myport.view.fragments.ScreenContact" type="XML"/>
 					</ObjectPageSubSection>
 				</subSections>
 			</ObjectPageSection>
