@@ -19,8 +19,8 @@ sap.ui.define([
 
 
 		onDownloadPDFCurriculum: function () {
-			var pdfUrl = "image/LogoLinkedin.png"; // Substitua pelo URL real do seu PDF
-			var fileName = "LogoLinkedin.png"; // Nome do arquivo a ser baixado
+			var pdfUrl = "image/PDF/Curriculo.pdf"; // Substitua pelo URL real do seu PDF
+			var fileName = "Curriculo.pdf"; // Nome do arquivo a ser baixado
 
 			var link = document.createElement("a");
 			link.href = pdfUrl;

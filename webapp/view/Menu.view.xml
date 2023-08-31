@@ -28,7 +28,7 @@
 				</subSections>
 			</ObjectPageSection>
 
-			<ObjectPageSection title="Projetos">
+			<ObjectPageSection title="Projetos" showTitle="false">
 				<subSections>
 					<ObjectPageSubSection>
 						<core:Fragment fragmentName="sap.devs.port.myport.view.fragments.ScreenProject" type="XML"/>

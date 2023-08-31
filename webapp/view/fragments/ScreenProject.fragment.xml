@@ -2,29 +2,33 @@
     xmlns:l="sap.ui.layout"
     xmlns:f="sap.f"
     xmlns:c="sap.ui.core">
-    <Carousel id="idCarousel" height="auto" loop="true">
-        <customLayout>
-            <CarouselLayout visiblePagesCount="4" />
-        </customLayout>
+
+    <VBox>
+        <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
+            <Title class="sapUiSmallMarginTopBottom" text="Projetos" titleStyle="H1"/>
+        </VBox>
+        <Carousel class="sapUiContentPadding" loop="true">
             <f:Card>
                 <f:content>
                     <l:VerticalLayout class="sapUiContentPadding" width="100%">
                         <l:BlockLayout>
                             <l:BlockLayoutRow>
-                                <l:BlockLayoutCell title="Calculadora" width="1">
-                                    <Avatar badgeIcon="sap-icon://competitor" displayShape="Square" displaySize="Custom" customDisplaySize="15rem" customFontSize="10rem"/>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <Label text="Supplier:" />
-                                    </HBox>
-                                    <HBox class="sapUiSmallMarginBottom">
-                                        <Text text="Teste" />
-                                    </HBox>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <Label text="Main Category:" />
-                                    </HBox>
-                                    <HBox class="sapUiSmallMarginBottom">
-                                        <Text text="Teste" />
-                                    </HBox>
+                                <l:BlockLayoutCell titleAlignment="Center" title="Calculadora" width="1">
+                                    <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
+                                        <Avatar badgeIcon="sap-icon://competitor" displayShape="Square" displaySize="Custom" customDisplaySize="15rem" customFontSize="10rem"/>
+                                        <HBox class="sapUiTinyMarginBottom">
+                                            <Label text="Supplier:" />
+                                        </HBox>
+                                        <HBox class="sapUiSmallMarginBottom">
+                                            <Text text="Teste" />
+                                        </HBox>
+                                        <HBox class="sapUiTinyMarginBottom">
+                                            <Label text="Main Category:" />
+                                        </HBox>
+                                        <HBox class="sapUiSmallMarginBottom">
+                                            <Text text="Teste" />
+                                        </HBox>
+                                    </VBox>
                                 </l:BlockLayoutCell>
                             </l:BlockLayoutRow>
                         </l:BlockLayout>
@@ -36,20 +40,22 @@
                     <l:VerticalLayout class="sapUiContentPadding" width="100%">
                         <l:BlockLayout>
                             <l:BlockLayoutRow>
-                                <l:BlockLayoutCell title="Calculadora" width="1">
-                                    <Avatar badgeIcon="sap-icon://competitor" displayShape="Square" displaySize="Custom" customDisplaySize="15rem" customFontSize="10rem"/>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <Label text="Supplier:" />
-                                    </HBox>
-                                    <HBox class="sapUiSmallMarginBottom">
-                                        <Text text="Teste" />
-                                    </HBox>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <Label text="Main Category:" />
-                                    </HBox>
-                                    <HBox class="sapUiSmallMarginBottom">
-                                        <Text text="Teste" />
-                                    </HBox>
+                                <l:BlockLayoutCell titleAlignment="Center" title="Calculadora" width="1">
+                                    <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
+                                        <Avatar badgeIcon="sap-icon://competitor" displayShape="Square" displaySize="Custom" customDisplaySize="15rem" customFontSize="10rem"/>
+                                        <HBox class="sapUiTinyMarginBottom">
+                                            <Label text="Supplier:" />
+                                        </HBox>
+                                        <HBox class="sapUiSmallMarginBottom">
+                                            <Text text="Teste" />
+                                        </HBox>
+                                        <HBox class="sapUiTinyMarginBottom">
+                                            <Label text="Main Category:" />
+                                        </HBox>
+                                        <HBox class="sapUiSmallMarginBottom">
+                                            <Text text="Teste" />
+                                        </HBox>
+                                    </VBox>
                                 </l:BlockLayoutCell>
                             </l:BlockLayoutRow>
                         </l:BlockLayout>
@@ -61,20 +67,22 @@
                     <l:VerticalLayout class="sapUiContentPadding" width="100%">
                         <l:BlockLayout>
                             <l:BlockLayoutRow>
-                                <l:BlockLayoutCell title="Calculadora" width="1">
-                                    <Avatar badgeIcon="sap-icon://competitor" displayShape="Square" displaySize="Custom" customDisplaySize="15rem" customFontSize="10rem"/>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <Label text="Supplier:" />
-                                    </HBox>
-                                    <HBox class="sapUiSmallMarginBottom">
-                                        <Text text="Teste" />
-                                    </HBox>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <Label text="Main Category:" />
-                                    </HBox>
-                                    <HBox class="sapUiSmallMarginBottom">
-                                        <Text text="Teste" />
-                                    </HBox>
+                                <l:BlockLayoutCell titleAlignment="Center" title="Calculadora" width="1">
+                                    <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
+                                        <Avatar badgeIcon="sap-icon://competitor" displayShape="Square" displaySize="Custom" customDisplaySize="15rem" customFontSize="10rem"/>
+                                        <HBox class="sapUiTinyMarginBottom">
+                                            <Label text="Supplier:" />
+                                        </HBox>
+                                        <HBox class="sapUiSmallMarginBottom">
+                                            <Text text="Teste" />
+                                        </HBox>
+                                        <HBox class="sapUiTinyMarginBottom">
+                                            <Label text="Main Category:" />
+                                        </HBox>
+                                        <HBox class="sapUiSmallMarginBottom">
+                                            <Text text="Teste" />
+                                        </HBox>
+                                    </VBox>
                                 </l:BlockLayoutCell>
                             </l:BlockLayoutRow>
                         </l:BlockLayout>
@@ -86,20 +94,22 @@
                     <l:VerticalLayout class="sapUiContentPadding" width="100%">
                         <l:BlockLayout>
                             <l:BlockLayoutRow>
-                                <l:BlockLayoutCell title="Calculadora" width="1">
-                                    <Avatar badgeIcon="sap-icon://competitor" displayShape="Square" displaySize="Custom" customDisplaySize="15rem" customFontSize="10rem"/>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <Label text="Supplier:" />
-                                    </HBox>
-                                    <HBox class="sapUiSmallMarginBottom">
-                                        <Text text="Teste" />
-                                    </HBox>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <Label text="Main Category:" />
-                                    </HBox>
-                                    <HBox class="sapUiSmallMarginBottom">
-                                        <Text text="Teste" />
-                                    </HBox>
+                                <l:BlockLayoutCell titleAlignment="Center" title="Calculadora" width="1">
+                                    <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
+                                        <Avatar badgeIcon="sap-icon://competitor" displayShape="Square" displaySize="Custom" customDisplaySize="15rem" customFontSize="10rem"/>
+                                        <HBox class="sapUiTinyMarginBottom">
+                                            <Label text="Supplier:" />
+                                        </HBox>
+                                        <HBox class="sapUiSmallMarginBottom">
+                                            <Text text="Teste" />
+                                        </HBox>
+                                        <HBox class="sapUiTinyMarginBottom">
+                                            <Label text="Main Category:" />
+                                        </HBox>
+                                        <HBox class="sapUiSmallMarginBottom">
+                                            <Text text="Teste" />
+                                        </HBox>
+                                    </VBox>
                                 </l:BlockLayoutCell>
                             </l:BlockLayoutRow>
                         </l:BlockLayout>
@@ -111,25 +121,28 @@
                     <l:VerticalLayout class="sapUiContentPadding" width="100%">
                         <l:BlockLayout>
                             <l:BlockLayoutRow>
-                                <l:BlockLayoutCell title="Calculadora" width="1">
-                                    <Avatar badgeIcon="sap-icon://competitor" displayShape="Square" displaySize="Custom" customDisplaySize="15rem" customFontSize="10rem"/>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <Label text="Supplier:" />
-                                    </HBox>
-                                    <HBox class="sapUiSmallMarginBottom">
-                                        <Text text="Teste" />
-                                    </HBox>
-                                    <HBox class="sapUiTinyMarginBottom">
-                                        <Label text="Main Category:" />
-                                    </HBox>
-                                    <HBox class="sapUiSmallMarginBottom">
-                                        <Text text="Teste" />
-                                    </HBox>
+                                <l:BlockLayoutCell titleAlignment="Center" title="Calculadora" width="1">
+                                    <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
+                                        <Avatar badgeIcon="sap-icon://competitor" displayShape="Square" displaySize="Custom" customDisplaySize="15rem" customFontSize="10rem"/>
+                                        <HBox class="sapUiTinyMarginBottom">
+                                            <Label text="Supplier:" />
+                                        </HBox>
+                                        <HBox class="sapUiSmallMarginBottom">
+                                            <Text text="Teste" />
+                                        </HBox>
+                                        <HBox class="sapUiTinyMarginBottom">
+                                            <Label text="Main Category:" />
+                                        </HBox>
+                                        <HBox class="sapUiSmallMarginBottom">
+                                            <Text text="Teste" />
+                                        </HBox>
+                                    </VBox>
                                 </l:BlockLayoutCell>
                             </l:BlockLayoutRow>
                         </l:BlockLayout>
                     </l:VerticalLayout>
                 </f:content>
             </f:Card>
-    </Carousel>
+        </Carousel>
+    </VBox>
 </c:FragmentDefinition>

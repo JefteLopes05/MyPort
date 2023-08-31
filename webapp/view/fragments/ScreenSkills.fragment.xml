@@ -6,24 +6,40 @@
             <Title class="sapUiSmallMarginTopBottom" text="Habilidades" titleStyle="H1"/>
         </VBox>
         <l:BlockLayout>
+            <!-- Coluna 1 -->
             <l:BlockLayoutRow accentCells="Accent1">
                 <l:BlockLayoutCell width="1" title="SAPUI5" titleAlignment="Center">
                     <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
                         <Avatar class="sapUiSmallMarginBottom" src="image/logoUI5.png" displayShape="Square" displaySize="Custom" customDisplaySize="8rem" customFontSize="3rem"/>
                     </VBox>
-                    <Text textAlign="Center" text="No presente momento, exerço a função de desenvolvedor freelancer especializado em SAPUI5, aplicando de maneira integrada o XML e o JavaScript para criar interfaces dinâmicas e robustas. Minha trajetória educacional abrange o ensino médio, o qual foi integrado a um curso técnico em informática. Estou profundamente comprometido em expandir meu conhecimento e cultivar novas habilidades, com o objetivo de oferecer à empresa um valor substancialmente enriquecido." />
                 </l:BlockLayoutCell>
                 <l:BlockLayoutCell width="1" title="XML" titleAlignment="Center">
                     <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
                         <Avatar class="sapUiSmallMarginBottom" src="image/logoXML.png" displayShape="Square" displaySize="Custom" customDisplaySize="8rem" customFontSize="3rem"/>
                     </VBox>
-                    <Text textAlign="Center" text="No presente momento, exerço a função de desenvolvedor freelancer especializado em SAPUI5, aplicando de maneira integrada o XML e o JavaScript para criar interfaces dinâmicas e robustas. Minha trajetória educacional abrange o ensino médio, o qual foi integrado a um curso técnico em informática. Estou profundamente comprometido em expandir meu conhecimento e cultivar novas habilidades, com o objetivo de oferecer à empresa um valor substancialmente enriquecido." />
                 </l:BlockLayoutCell>
                 <l:BlockLayoutCell width="1" title="Javascript" titleAlignment="Center">
                     <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
                         <Avatar class="sapUiSmallMarginBottom" src="image/logoJavascript.png" displayShape="Square" displaySize="Custom" customDisplaySize="8rem" customFontSize="3rem"/>
                     </VBox>
-                    <Text textAlign="Center" text="No presente momento, exerço a função de desenvolvedor freelancer especializado em SAPUI5, aplicando de maneira integrada o XML e o JavaScript para criar interfaces dinâmicas e robustas. Minha trajetória educacional abrange o ensino médio, o qual foi integrado a um curso técnico em informática. Estou profundamente comprometido em expandir meu conhecimento e cultivar novas habilidades, com o objetivo de oferecer à empresa um valor substancialmente enriquecido." />
+                </l:BlockLayoutCell>
+            </l:BlockLayoutRow>
+            <!-- Colune 2 -->
+            <l:BlockLayoutRow accentCells="Accent1">
+                <l:BlockLayoutCell width="1" title="Fiori" titleAlignment="Center">
+                    <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
+                        <Avatar class="sapUiSmallMarginBottom" src="image/Fiori.png" displayShape="Square" displaySize="Custom" customDisplaySize="8rem" customFontSize="3rem"/>
+                    </VBox>
+                </l:BlockLayoutCell>
+                <l:BlockLayoutCell width="1" title="Em breve" titleAlignment="Center">
+                    <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
+                        <Avatar class="sapUiSmallMarginBottom" src="image/EmBreve.png" displayShape="Square" displaySize="Custom" customDisplaySize="8rem" customFontSize="3rem"/>
+                    </VBox>
+                </l:BlockLayoutCell>
+                <l:BlockLayoutCell width="1" title="Em breve" titleAlignment="Center">
+                    <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
+                        <Avatar class="sapUiSmallMarginBottom" src="image/EmBreve.png" displayShape="Square" displaySize="Custom" customDisplaySize="8rem" customFontSize="3rem"/>
+                    </VBox>
                 </l:BlockLayoutCell>
             </l:BlockLayoutRow>
         </l:BlockLayout>
