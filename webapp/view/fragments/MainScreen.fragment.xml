@@ -1,15 +1,15 @@
 <c:FragmentDefinition xmlns="sap.m"
     xmlns:c="sap.ui.core">
-    <HBox alignContent="Center" alignItems="Center" justifyContent="Center">
+    <HBox class="customHboxMain sapUiSmallMarginBegin" alignContent="Center" alignItems="Center" justifyContent="Center">
         <VBox>
-            <Avatar class="sapUiLargeMarginTopBottom sapUiSmallMarginBegin" src="image/MyStatusSmall.jpg" displaySize="Custom" customDisplaySize="20rem"/>
-            <HBox class="sapUiSmallMarginBegin" alignContent="Center" alignItems="Center" justifyContent="Center">
+            <Avatar class="sapUiSmallMarginBottom Status" src="image/MyStatusSmall.jpg" displaySize="Custom" customDisplaySize="20rem"/>
+            <HBox alignContent="Center" alignItems="Center" justifyContent="Center">
                 <Avatar src="image/LogoLinkedin.png" class="sapUiTinyMarginBeginEnd" tooltip="Perfil do Linkedin" showBorder="true" press="onRedirectToLinkedin"/>
                 <Avatar src="image/LogoGitHub.png" class="sapUiTinyMarginBeginEnd" tooltip="Perfil do gitHub" showBorder="true" press="onRedirectToGitHub"/>
             </HBox>
         </VBox>
     </HBox>
-    <HBox class="sapUiLargeMarginTopBottom" alignContent="Center" alignItems="Center" justifyContent="Center">
+    <HBox class="customHboxMainRight" alignContent="Center" alignItems="Center" justifyContent="Center">
         <VBox>
             <Title textAlign="Center" text="Olá! Sou Jefté Lopes Desenvolvedor Freelancer" wrapping="true" titleStyle="H1"/>
             <HBox class="sapUiSmallMarginTopBottom" alignContent="Center" alignItems="Center">

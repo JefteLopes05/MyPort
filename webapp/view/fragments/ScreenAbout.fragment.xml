@@ -17,11 +17,9 @@
         </l:BlockLayout>
         <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
             <Title class="sapUiSmallMarginBottom sapUiMediumMarginTop" text="Certificado" titleStyle="H2"/>
-            <Avatar src="image/MyStatusSmall.jpg" class="sapUiSmallMarginBottom" fallbackIcon="sap-icon://competitor" tooltip="Ver Certificado" displaySize="Custom" customDisplaySize="10rem" customFontSize="5rem">
+            <Avatar id="certify1" src="image/ImgSchoolCertifi.jpg" class="sapUiSmallMarginBottom AvatarCertify" showBorder="true" tooltip="Ver Certificado" displaySize="Custom" customDisplaySize="10rem" customFontSize="5rem" press="onViewCertify">
                 <detailBox>
                     <LightBox>
-                        <LightBoxItem imageSrc="image/MyStatusSmall.jpg" alt="Paulo Petrola" title="Currículo do Paulo Petrola" subtitle="Escola Proficionalizante">
-                        </LightBoxItem>
                     </LightBox>
                 </detailBox>
             </Avatar>
