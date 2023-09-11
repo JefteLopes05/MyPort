@@ -31,12 +31,12 @@
                         <Avatar class="sapUiSmallMarginBottom" src="image/Fiori.png" displayShape="Square" displaySize="Custom" customDisplaySize="8rem" customFontSize="3rem"/>
                     </VBox>
                 </l:BlockLayoutCell>
-                <l:BlockLayoutCell width="1" title="Em breve" titleAlignment="Center">
+                <l:BlockLayoutCell width="1" title="Em andamento" titleAlignment="Center">
                     <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
                         <Avatar class="sapUiSmallMarginBottom" src="image/EmBreve.png" displayShape="Square" displaySize="Custom" customDisplaySize="8rem" customFontSize="3rem"/>
                     </VBox>
                 </l:BlockLayoutCell>
-                <l:BlockLayoutCell width="1" title="Em breve" titleAlignment="Center">
+                <l:BlockLayoutCell width="1" title="Em andamento" titleAlignment="Center">
                     <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
                         <Avatar class="sapUiSmallMarginBottom" src="image/EmBreve.png" displayShape="Square" displaySize="Custom" customDisplaySize="8rem" customFontSize="3rem"/>
                     </VBox>
