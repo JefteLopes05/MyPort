@@ -3,7 +3,7 @@
     xmlns:l="sap.ui.layout">
     <l:VerticalLayout width="100%">
         <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-            <Title class="sapUiSmallMarginTopBottom" text="Sobre" titleStyle="H1"/>
+            <Title class="sapUiSmallMarginTopBottom" text="Sobre mim" titleStyle="H1"/>
         </VBox>
         <l:BlockLayout>
             <l:BlockLayoutRow accentCells="Accent1">
