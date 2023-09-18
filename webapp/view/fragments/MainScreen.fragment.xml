@@ -18,7 +18,7 @@
             </HBox>
             <HBox class="sapUiSmallMarginTopBottom" alignContent="Center" alignItems="Center">
                 <Avatar fallbackIcon="sap-icon://study-leave" backgroundColor="Accent9"/>
-                <Title text="Cursando Análise e Desenvolvimento de Sistemas (Em Breve)" wrapping="true" titleStyle="H3"/>
+                <Title text="Estudante de Análise e Desenvolvimento de Sistemas (Em Breve)" wrapping="true" titleStyle="H3"/>
             </HBox>
             <HBox class="sapUiSmallMarginTopBottom" alignContent="Center" alignItems="Center">
                 <Avatar fallbackIcon="sap-icon://lightbulb" backgroundColor="Accent7"/>
