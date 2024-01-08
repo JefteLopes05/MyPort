@@ -3,7 +3,7 @@
     xmlns:c="sap.ui.core">
     <l:VerticalLayout width="100%">
         <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-            <Title class="sapUiSmallMarginTopBottom" text="Contato" titleStyle="H1"/>
+            <Title class="sapUiSmallMarginTopBottom" text="Contato" titleStyle="H2"/>
         </VBox>
         <l:BlockLayout>
             <l:BlockLayoutRow accentCells="Accent1">

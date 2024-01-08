@@ -5,7 +5,7 @@
 
     <VBox>
         <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-            <Title class="sapUiSmallMarginTopBottom" text="Projetos" titleStyle="H1"/>
+            <Title class="sapUiSmallMarginTopBottom" text="Projetos" titleStyle="H2"/>
         </VBox>
         <Carousel class="sapUiContentPadding">
             <f:Card>

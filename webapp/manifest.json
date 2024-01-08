@@ -1,20 +1,16 @@
 {
-  "_version": "1.37.0",
+  "_version": "1.32.0",
   "sap.app": {
     "id": "sap.devs.port.myport",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
     "resources": "resources.json",
-    "sourceTemplate": {
-      "id": "@sap/generator-fiori:basic",
-      "version": "1.10.2",
-      "toolsId": "e93b3223-9945-4968-aea0-423da51e2dc3"
-    }
+    "ach": "ach"
   },
   "sap.ui": {
     "technology": "UI5",
@@ -37,14 +33,10 @@
     "dependencies": {
       "minUI5Version": "1.96.8",
       "libs": {
-        "sap.m": {},
         "sap.ui.core": {},
-        "sap.f": {},
-        "sap.suite.ui.generic.template": {},
-        "sap.ui.comp": {},
-        "sap.ui.generic.app": {},
-        "sap.ui.table": {},
-        "sap.ushell": {}
+        "sap.m": {},
+        "sap.ui.layout": {},
+        "sap.f": {}
       }
     },
     "contentDensities": {
@@ -68,6 +60,11 @@
     },
     "routing": {
       "config": {
+        "theme": "sap_horizon",
+        "supportedThemes": [
+          "sap_horizon",
+          "sap_fiori_3_dark"
+        ],  
         "routerClass": "sap.m.routing.Router",
         "viewType": "XML",
         "async": true,
@@ -91,10 +88,10 @@
       }
     },
     "rootView": {
-      "viewName": "sap.devs.port.myport.view.Menu",
+      "viewName": "sap.devs.port.myport.view.Main",
       "type": "XML",
       "async": true,
-      "id": "App"
+      "id": "appContainer"
     }
   }
 }

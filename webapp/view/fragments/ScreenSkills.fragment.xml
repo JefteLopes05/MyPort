@@ -3,7 +3,7 @@
     xmlns:l="sap.ui.layout">
     <l:VerticalLayout width="100%">
         <VBox alignContent="Center" alignItems="Center" justifyContent="Center">
-            <Title class="sapUiSmallMarginTopBottom" text="Habilidades" titleStyle="H1"/>
+            <Title class="sapUiSmallMarginTopBottom" text="Habilidades" titleStyle="H2"/>
         </VBox>
         <l:BlockLayout>
             <!-- Coluna 1 -->
